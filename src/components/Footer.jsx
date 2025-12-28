@@ -38,9 +38,9 @@ const Footer = () => {
         </div>
 
         {/* Right Image */}
-        <div className="">
+        <div>
           <img
-            src={assets.fxcgo11} // 🔁 replace with your image key
+            src={assets.fxcgo11}
             alt="Investor"
             className=""
           />
@@ -117,7 +117,6 @@ const Footer = () => {
             <h4 className="font-semibold text-gray-900 mb-4">Account</h4>
 
             <ul className="space-y-2 text-gray-600">
-              {/* Account subItems */}
               {navItems
                 .find((i) => i.label === "Account")
                 ?.subItems.map((sub, i) => (
@@ -128,7 +127,6 @@ const Footer = () => {
                   </li>
                 ))}
 
-              {/* News & About Us */}
               {navItems
                 .filter((i) => ["News", "About Us"].includes(i.label))
                 .map((extra, i) => (
@@ -139,7 +137,6 @@ const Footer = () => {
                   </li>
                 ))}
 
-              {/* Contact Us & FAQs (from Contact group) */}
               {navItems
                 .find((i) => i.label === "Contact")
                 ?.subItems.map((sub, i) => (
@@ -160,15 +157,38 @@ const Footer = () => {
             <p className="text-gray-600 mb-4">FXElite.com</p>
 
             <div className="flex gap-3">
-              <span className="w-9 h-9 flex items-center justify-center rounded-full bg-indigo-100 text-indigo-600">
-                f
-              </span>
-              <span className="w-9 h-9 flex items-center justify-center rounded-full bg-indigo-100 text-indigo-600">
-                G+
-              </span>
-              <span className="w-9 h-9 flex items-center justify-center rounded-full bg-indigo-100 text-indigo-600">
+              {/* Instagram */}
+              <a
+                href="https://www.instagram.com/fxeliteofficial/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 flex items-center justify-center rounded-full bg-indigo-100 text-indigo-600 hover:bg-indigo-600 hover:text-white transition"
+                aria-label="Instagram"
+              >
                 in
-              </span>
+              </a>
+
+              {/* X / Twitter */}
+              <a
+                href="https://x.com/fxeliteofficial"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 flex items-center justify-center rounded-full bg-indigo-100 text-indigo-600 hover:bg-indigo-600 hover:text-white transition"
+                aria-label="X (Twitter)"
+              >
+                x
+              </a>
+
+              {/* Facebook */}
+              <a
+                href="https://www.facebook.com/profile.php?id=61584855974219"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 flex items-center justify-center rounded-full bg-indigo-100 text-indigo-600 hover:bg-indigo-600 hover:text-white transition"
+                aria-label="Facebook"
+              >
+                f
+              </a>
             </div>
           </div>
         </div>
