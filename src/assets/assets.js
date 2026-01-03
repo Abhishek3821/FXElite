@@ -29,9 +29,11 @@ import fx11 from "./fx11.png";
 import fx12 from "./fx12.png";
 import fx13 from "./fx13.gif";
 import fxeliteLogo from "./fxeliteLogo.jpeg";
+import fxeliteLogoo from "./fxeliteLogoo.png";
 
 export const assets = {
   fxeliteLogo,
+  fxeliteLogoo,
   fxcgo1,
   fxcgo2,
   fxcgo4,

@@ -18,7 +18,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-20">
             {/* LOGO (unchanged) */}
             <NavLink to="/" className="flex items-center">
-              <img src={assets.fxeliteLogo} alt="Logo" className="h-20 " />
+              <img src={assets.fxeliteLogoo} alt="Logo" className="h-13 " />
             </NavLink>
 
             {/* DESKTOP MENU */}
